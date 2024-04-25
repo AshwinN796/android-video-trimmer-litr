@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private boolean checkCamStoragePer() {
         return checkPermission(
-                Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.CAMERA);
+                Manifest.permission.READ_MEDIA_VIDEO, Manifest.permission.CAMERA);
     }
 
     private boolean checkPermission(String... permissions) {
