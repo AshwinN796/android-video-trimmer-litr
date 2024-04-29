@@ -654,13 +654,16 @@ public class ActVideoTrimmer extends AppCompatActivity {
     }
 
     private boolean checkStoragePermission() {
+        String[] permissions;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            return checkPermission(
-                    Manifest.permission.READ_MEDIA_VIDEO, Manifest.permission.ACCESS_MEDIA_LOCATION);
-        } else
-            return checkPermission(
-                    Manifest.permission.READ_MEDIA_VIDEO);
-
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                permissions = new String[]{Manifest.permission.READ_MEDIA_VIDEO, Manifest.permission.ACCESS_MEDIA_LOCATION};
+            } else
+                permissions = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.ACCESS_MEDIA_LOCATION};
+        }else  {
+            permissions = new String[]{ Manifest.permission.READ_EXTERNAL_STORAGE };
+        }
+        return checkPermission(permissions);
     }
 
     private boolean checkPermission(String... permissions) {
