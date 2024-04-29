@@ -1,5 +1,5 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
-[![](https://jitpack.io/v/a914-gowtham/android-video-trimmer-litr.svg)](https://jitpack.io/#AshwinN796/android-video-trimmer-litr)
+[![Latest Version](1.6.1)](https://jitpack.io/#AshwinN796/android-video-trimmer-litr)
 
 # Android-video-trimmer
 
