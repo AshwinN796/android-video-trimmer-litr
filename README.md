@@ -1,5 +1,5 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
-[![](https://jitpack.io/v/a914-gowtham/android-video-trimmer-litr.svg)](https://jitpack.io/#a914-gowtham/android-video-trimmer-litr)
+[![](https://jitpack.io/v/a914-gowtham/android-video-trimmer-litr.svg)](https://jitpack.io/#AshwinN796/android-video-trimmer-litr)
 
 # Android-video-trimmer
 
@@ -15,22 +15,15 @@
 + Add the dependency to your app `build.gradle` file
  ```gradle
  dependencies {
-	      implementation 'com.github.AshwinN796:android-video-trimmer-litr:1.6.0'
+	      implementation 'com.github.AshwinN796:android-video-trimmer-litr:1.6.1'
  }
  ```
  + Add to project's root `build.gradle` file:
 ```gradle
 allprojects {
-	dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		maven { url 'https://jitpack.io' }
 	}
-	//repositories {
-	//	maven { url 'https://jitpack.io' }
-	//}
 }
 ```
 2. Add the code for opening Trim Activity.
