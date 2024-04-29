@@ -15,15 +15,22 @@
 + Add the dependency to your app `build.gradle` file
  ```gradle
  dependencies {
-    implementation 'com.github.a914-gowtham:android-video-trimmer-litr:1.5.11'
+	      implementation 'com.github.AshwinN796:android-video-trimmer-litr:1.6.0'
  }
  ```
  + Add to project's root `build.gradle` file:
 ```gradle
 allprojects {
-	repositories {
-		maven { url 'https://jitpack.io' }
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
 	}
+	//repositories {
+	//	maven { url 'https://jitpack.io' }
+	//}
 }
 ```
 2. Add the code for opening Trim Activity.
@@ -99,12 +106,12 @@ TrimVideo.activity(videoUri)
 
 ## Compatibility
   
-  * Library - Android Kitkat 4.4+ (API 19)
-  * Sample - Android Kitkat 4.4+ (API 19)
+  * Library - TIRAMISU API 33
+  * Sample - Android TIRAMISU API 33
   
 ## ChangeLog
-### Version 1.5.11
-  * Write permission removed
+### Version 1.6.1
+  * Support android 13
   
 ### Version 1.5.3
   * First version
